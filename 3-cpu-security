@@ -1,0 +1,1 @@
+for f in /sys/devices/system/cpu/vulnerabilities/*; do if [ -r "$f" ]; then printf '%-30s : ' "$(basename "$f")"; cat "$f"; fi; done
