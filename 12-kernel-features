@@ -1,0 +1,1 @@
+printf '\n=== KERNEL VERSION ===\n'; uname -sr; printf '\n=== SECCOMP SUPPORT ===\n'; grep -E '^(Seccomp|Seccomp_filters):' /proc/$$/status; printf '\n=== CHROMIUM VERSION ===\n'; chromium --version
