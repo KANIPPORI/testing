@@ -1,0 +1,1 @@
+printf '\n=== CPU ===\n'; lscpu; printf '\n=== MEMORY ===\n'; free -h; printf '\n=== STORAGE ===\n'; lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINTS; printf '\n=== ROOT FILESYSTEM ===\n'; findmnt -T /; printf '\n=== VIRTUALIZATION ===\n'; systemd-detect-virt
