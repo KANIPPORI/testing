@@ -1,0 +1,1 @@
+printf '\n=== KERNEL ===\n'; uname -sr; printf '\n=== OS ===\n'; cat /etc/os-release; printf '\n=== PROCESS SECURITY ===\n'; grep -E '^(NoNewPrivs|Seccomp|Seccomp_filters|CapEff|CapBnd):' /proc/self/status
