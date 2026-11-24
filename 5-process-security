@@ -1,0 +1,1 @@
+printf '\n=== CURRENT SHELL SECURITY ===\n'; grep -E '^(Name|Uid|Gid|CapEff|CapBnd|NoNewPrivs|Seccomp|Seccomp_filters):' /proc/$$/status
