@@ -1,0 +1,1 @@
+printf '\n=== ACTIVE LINUX SECURITY MODULES ===\n'; cat /sys/kernel/security/lsm 2>/dev/null || echo "Information unavailable"; printf '\n=== YAMA PTRACE SCOPE ===\n'; cat /proc/sys/kernel/yama/ptrace_scope 2>/dev/null || echo "Information unavailable"
