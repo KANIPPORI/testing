@@ -1,0 +1,1 @@
+for tool in htop top hardinfo hardinfo2 xfce4-taskmanager gnome-system-monitor cockpit-bridge netdata virt-manager lsblk lscpu free findmnt; do printf '%-25s ' "$tool"; command -v "$tool" || echo "Not installed or not in PATH"; done
