@@ -1,0 +1,1 @@
+curl -fsSL 'https://api.github.com/repos/kata-containers/kata-containers/security-advisories?per_page=100' | python3 -c 'import json,sys; [print(json.dumps({"CVE":a.get("cve_id"),"GHSA":a.get("ghsa_id"),"Severity":a.get("severity"),"Affected_versions":a.get("vulnerabilities"),"URL":a.get("html_url")},indent=2)) for a in json.load(sys.stdin)]'
