@@ -1,0 +1,1 @@
+printf '\n=== HOSTNAME ===\n'; hostname; printf '\n=== CURRENT USER ===\n'; id; printf '\n=== KERNEL ===\n'; uname -sr; printf '\n=== VIRTUALIZATION ===\n'; systemd-detect-virt; printf '\n=== BUBBLEWRAP VERSION ===\n'; bwrap --version; printf '\n=== ROOT FILESYSTEM ===\n'; findmnt -T /
