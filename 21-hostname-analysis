@@ -1,0 +1,1 @@
+python3 -c 'from collections import Counter; h=["73423de6ac14","2df217b8050e","6013793f16e5","4269ae1942f4","059a01275911","3c09bebb28d2"]; print("Total:",len(h)); print("Unique:",len(set(h))); print("Duplicates:",len(h)-len(set(h))); print("Character frequency:",dict(sorted(Counter("".join(h)).items())))'
