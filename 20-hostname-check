@@ -1,0 +1,1 @@
+printf '\n=== DATE ===\n'; date -u; printf '\n=== HOSTNAME ===\n'; hostname; printf '\n=== KERNEL HOSTNAME ===\n'; uname -n; printf '\n=== HOSTNAME FILE ===\n'; cat /etc/hostname; h=$(hostname); printf '\n=== HOSTNAME LENGTH ===\n%s\n' "${#h}"; if [[ "$h" =~ ^[0-9a-f]{12}$ ]]; then echo "Format: 12-character hexadecimal"; else echo "Format: Different"; fi
