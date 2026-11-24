@@ -1,0 +1,1 @@
+printf '\n=== DATE ===\n'; date -u; printf '\n=== HOSTNAME ===\n'; hostname; printf '\n=== KERNEL ===\n'; uname -sr; printf '\n=== SHELL SECURITY ===\n'; grep -E '^(NoNewPrivs|Seccomp|Seccomp_filters|CapEff|CapBnd):' /proc/$$/status
