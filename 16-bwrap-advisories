@@ -1,0 +1,1 @@
+curl -fsSL https://api.github.com/repos/containers/bubblewrap/security-advisories | python3 -c 'import json,sys; data=json.load(sys.stdin); [print(x.get("cve_id"),x.get("severity"),x.get("summary"),x.get("html_url"),sep="\n",end="\n\n") for x in data]'
